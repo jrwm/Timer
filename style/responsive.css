@@ -22,34 +22,9 @@
 		-moz-border-radius: 4px;
 		border-radius: 4px;
 	}
-	.sidebar {
-		background: #081833;
-		padding: 30px 30px 10px 30px;
-		width: 100%;
-		height: auto;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-	.sidebar .cubes {
-		margin: 0 0 0 0;
-		width: 100%;
-	}
-	.sidebar .cubes:after {
-		content: " ";
-		visibility: hidden;
-		display: block;
-		height: 0;
-		clear: both;
-	}
-	.sidebar .cubes li {
-		margin: 0 20px 20px 0;
-		width: 58px;
-		float: left;
-	}
 	.content {
 		background: #F4F7FF;
-		padding: 142px 0 0 0;
+		padding: 0 0 0 0;
 		width: 100%;
 		text-align: center;
 	}
@@ -78,42 +53,19 @@
 		color: #2979FF;
 		text-decoration: none;
 	}
-	.content .start {
-		width: 100%;
-		height: 80px;
-		line-height: 80px;
-		-webkit-border-radius: 0;
-		   -moz-border-radius: 0;
-		        border-radius: 0;
-		position: absolute;
-		left: 0;
-		bottom: 0;
+	.sidebar {
+		display: none;
 	}
 }
 /*------------------------------------------------------------
 	Max width 480px
 -------------------------------------------------------------*/
 @media (max-width: 480px) {
-	.sidebar {
-		padding: 20px 20px 20px 20px;
-	}
-	.sidebar .cubes li {
-		margin: 0 10px 0 0;
-	}
-	.sidebar .cubes li:before {
-		margin: 0 0 0 0;
-	}
-	.sidebar .cubes li span {
-		display: none;
-	}
 	.scramble li {
 		margin: 0 5px 5px 0;
 	}
 	.header {
 		padding: 20px 20px 15px 20px;
-	}
-	.content {
-		padding: 98px 0 0 0;
 	}
 	.content .timer {
 		margin: 20px 0 0 0;
@@ -128,24 +80,8 @@
 	Max width 370px
 -------------------------------------------------------------*/
 @media (max-width: 370px) {
-	.sidebar {
-		padding: 10px 10px 10px 10px;
-	}
-	.sidebar .cubes li {
-		margin: 0 16px 0 0;
-		width: auto;
-	}
-	.sidebar .cubes li:before {
-		display: none;
-	}
-	.sidebar .cubes li span {
-		display: block;
-	}
 	.header {
 		padding: 10px 10px 5px 10px;
-	}
-	.content {
-		padding: 39px 0 0 0;
 	}
 	.content .timer {
 		font-size: 50px;

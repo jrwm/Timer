@@ -10,15 +10,9 @@ body {
 	font-family: 'Open Sans',Helvetica, Arial, sans-serif;
 	font-size: 16px;
 }
-html, body {
-	height: 100%;
-}
 /*------------------------------------------------------------
 	.main
 -------------------------------------------------------------*/
-.main {
-	height: 100%;
-}
 .main:after {
 	content: " ";
 	visibility: hidden;
@@ -32,20 +26,20 @@ html, body {
 .sidebar {
 	background: #081833;
 	width: 118px;
-	height: 100%;
-	position: fixed;
+	min-height: 1200px;
+	position: absolute;
 	left: 0;
 	top: 0;
 }
 .sidebar .cubes {
 	margin: 30px 0 0 30px;
-	width: 58px;
+	width: 60px;
 	text-align: center;
 }
 .sidebar .cubes li {
 	margin: 0 0 20px 0;
 	color: #CED1D6;
-	font-size: 14px;
+	font-size: 12px;
 	cursor: pointer;
 }
 .sidebar .cubes li:last-child {
@@ -56,44 +50,74 @@ html, body {
 	color: #ffffff;
 }
 .sidebar .cubes li:before {
-	margin: 0 0 5px 0;
+	margin: 0 auto 5px auto;
 	content: "";
 	display: block;
 	width: 58px;
 	height: 58px;
 }
-.sidebar .cubes li:hover:before {
+.sidebar .cubes li:before {
+	background: url(../images/cubes.svg) no-repeat;
+	background-position: 0 0;
 	cursor: pointer;
 }
+.sidebar .cubes li:hover:before {
+	background: url(../images/cubes-hover.svg) no-repeat;
+	background-position: 0 0;
+}
+.sidebar .cubes li.active:before {
+	background: url(../images/cubes-hover.svg) no-repeat;
+	background-position: 0 0;
+}
+.sidebar .cubes li.cube-01:before {
+	background-position: -2px 0;
+}
 .sidebar .cubes li.cube-02:before {
-	background: url(../images/cubes.svg) no-repeat -1px 0;
+	background-position: -2px -100px;
 }
 .sidebar .cubes li.cube-03:before {
-	background: url(../images/cubes.svg) no-repeat -1px -100px;
+	background-position: -2px -200px;
 }
 .sidebar .cubes li.cube-04:before {
-	background: url(../images/cubes.svg) no-repeat -1px -200px;
+	background-position: -2px -300px;
 }
 .sidebar .cubes li.cube-05:before {
-	background: url(../images/cubes.svg) no-repeat -1px -300px;
+	background-position: -2px -400px;
 }
 .sidebar .cubes li.cube-06:before {
-	background: url(../images/cubes.svg) no-repeat -1px -400px;
+	background-position: 0 -500px;
+	width: 60px;
+	height: 57px;
+}
+.sidebar .cubes li.cube-07:before {
+	background-position: -2px -599px;
+}
+.sidebar .cubes li.cube-08:before {
+	background-position: -2px -699px;
+}
+.sidebar .cubes li.cube-01:hover:before, .sidebar .cubes li.cube-01.active:before {
+	background-position: -2px 0;
 }
 .sidebar .cubes li.cube-02:hover:before, .sidebar .cubes li.cube-02.active:before {
-	background: url(../images/cubes-hover.svg) no-repeat -1px 0;
+	background-position: -2px -100px;
 }
 .sidebar .cubes li.cube-03:hover:before, .sidebar .cubes li.cube-03.active:before {
-	background: url(../images/cubes-hover.svg) no-repeat -1px -100px;
+	background-position: -2px -200px;
 }
 .sidebar .cubes li.cube-04:hover:before, .sidebar .cubes li.cube-04.active:before {
-	background: url(../images/cubes-hover.svg) no-repeat -1px -200px;
+	background-position: -2px -300px;
 }
 .sidebar .cubes li.cube-05:hover:before, .sidebar .cubes li.cube-05.active:before {
-	background: url(../images/cubes-hover.svg) no-repeat -1px -300px;
+	background-position: -2px -400px;
 }
 .sidebar .cubes li.cube-06:hover:before, .sidebar .cubes li.cube-06.active:before {
-	background: url(../images/cubes-hover.svg) no-repeat -1px -400px;
+	background-position: 0 -500px;
+}
+.sidebar .cubes li.cube-07:hover:before, .sidebar .cubes li.cube-07.active:before {
+	background-position: -2px -599px;
+}
+.sidebar .cubes li.cube-08:hover:before, .sidebar .cubes li.cube-08.active:before {
+	background-position: -2px -699px;
 }
 /*------------------------------------------------------------
 	.content
@@ -102,7 +126,7 @@ html, body {
 	background: #F4F7FF;
 	padding: 0 0 0 118px;
 	width: 100%;
-	height: 100%;
+	min-height: 1200px;
 	text-align: center;
 }
 .header {
@@ -150,14 +174,25 @@ html, body {
 	font-weight: 300;
 	color: #081833;
 }
-.content .start {
-	background: #00E676;
-	margin: 20px auto 0 auto;
-	width: 220px;
+/*-- Centrovani floutovaneho divu --*/
+.container {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+.buttons, .times {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+.buttons li {
+    float: left;
+    display: block;
+}
+.buttons .button {
+	margin: 20px 0 0 0;
 	height: 60px;
-	display: block;
 	line-height: 60px;
-	text-align: center;
 	font-size: 18px;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -165,9 +200,80 @@ html, body {
 	-webkit-border-radius: 6px;
 	   -moz-border-radius: 6px;
 	        border-radius: 6px;
+	float: left;
+	display: block;
 }
-.content .start:hover {
-	background: #69F0AE;
+/*-- Konec centrovani floutovaneho divu --*/
+.buttons .start {
+	background: #4cd964;
+	width: 220px;
+}
+.buttons .start:hover {
+	background: #48CE5F;
+}
+.buttons .stop {
+	background: #ff3b30;
+	width: 220px;
+}
+.buttons .stop:hover {
+	background: #F2382E;
+}
+.prumer-z-peti-slozeni .buttons .stop {
+	margin: 20px 10px 0 0;
+}
+.buttons .dalsi {
+	background: #BDBEC2;
+	width: 220px;
+}
+.buttons .dalsi:hover {
+	background: #B4B5B8;
+}
+.buttons .obnovit {
+	background: #8e8e93 url(../images/icon-refresh.svg) no-repeat center center;
+	margin: 20px 10px 0 0;
+	width: 60px;
+	overflow: hidden;
+	line-height: 200px;
+}
+.buttons .obnovit:hover {
+	background: #87878C url(../images/icon-refresh.svg) no-repeat center center;
+}
+.times {
+	margin: 0 0 30px 0;
+}
+.times:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.times li {
+	background: #B4B5B8;
+	margin: 0 10px 0 0;
+	width: 100px;
+	height: 40px;
+	float: left;
+	display: block;
+	color: #ffffff;
+	line-height: 40px;
+	text-align: center;
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px;
+	float: left;
+	display: block;
+}
+.times li.best-time {
+	opacity: 0.3;
+	color: #555555;
+}
+.times li.worst-time {
+	opacity: 0.3;
+	color: #555555;
+}
+.times li.score {
+	background: #4cd964;
 }
 /*-----------------------------------------------------------------
 	.tabs
@@ -225,7 +331,13 @@ html, body {
 	           border-top-right-radius: 6px;
 	        border-bottom-right-radius: 6px;
 }
-
+.jedno-slozeni:after, .prumer-z-peti-slozeni:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
 
 
 

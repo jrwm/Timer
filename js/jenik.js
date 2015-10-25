@@ -1,17 +1,3 @@
-$("#jedno-slozeni .timer").html("00:00:00")
-
-$(".start").click(function(){
-
-	if (running) {
-		stop()
-	} else {
-		reset()
-		start()
-	}
-
-
-})
-
 var	clsStopwatch = function() {
 	// Private vars
 	var	startAt	= 0;	// Time of last start / resume. (0 if not running)
@@ -46,9 +32,7 @@ var	clsStopwatch = function() {
 };
 
 var x = new clsStopwatch();
-var $time;
 var clocktimer;
-var running = false
 
 function pad(num, size) {
 	var s = "0000" + num;
@@ -70,24 +54,21 @@ function formatTime(time) {
 	return newTime;
 }
 
-function show() {
-	$time = document.getElementById('time');
-	update();
-}
-
 function update() {
-	$("#jedno-slozeni .timer").html(formatTime(x.time()))
+	if (mode == "JS") {
+		JSTimer.html(formatTime(x.time()))
+	} else if (mode == "PS") {
+		PSTimer.html(formatTime(x.time()))
+	}
 }
 
 function start() {
 	clocktimer = setInterval("update()", 1);
-	running = true
 	x.start();
 }
 
 function stop() {
 	x.stop();
-	running = false
 	clearInterval(clocktimer);
 }
 
@@ -96,6 +77,168 @@ function reset() {
 	x.reset();
 	update();
 }
+
+////////////////////////
+// INIT GENERAL
+////////////////////////
+
+var mode = "JS"
+$(".tabs .jedno-slozeni a").click(function() {
+	mode = "JS"
+	console.log("mode JS")
+})
+
+$(".tabs .prumer-z-peti-slozeni a").click(function() {
+	mode = "PS"
+	console.log("mode PS")
+})
+
+
+////////////////////////
+// INIT JEDNO SLOZENI
+////////////////////////
+
+var JSTimer = $("#jedno-slozeni .timer")
+var JSObnovit = $("#jedno-slozeni .obnovit")
+var JSStart = $("#jedno-slozeni .start")
+var JSStop = $("#jedno-slozeni .stop")
+var JSStatus = 0
+
+JSTimer.html("00:00:00")
+JSObnovit.hide()
+JSStop.hide()
+
+function fJSStart() {
+	JSStatus = 1
+	reset()
+	start()
+	JSStart.hide()
+	JSStop.show()
+}
+
+function fJSStop() {
+	JSStatus = 2
+	stop()
+	JSStop.hide()
+	JSObnovit.show()
+}
+
+function fJSObnovit() {
+	JSStatus = 0
+	makeScramble()
+	reset()
+	JSObnovit.hide()
+	JSStart.show()
+}
+
+JSStart.click(fJSStart)
+JSStop.click(fJSStop)
+JSObnovit.click(fJSObnovit)
+
+////////////////////////
+// INIT PET SLOZENI
+////////////////////////
+
+var PSTimer = $("#prumer-z-peti-slozeni .timer")
+var PSObnovit = $("#prumer-z-peti-slozeni .obnovit")
+var PSStart = $("#prumer-z-peti-slozeni .start")
+var PSStop = $("#prumer-z-peti-slozeni .stop")
+var PSDalsi = $("#prumer-z-peti-slozeni .dalsi")
+var PSTimes = $("#prumer-z-peti-slozeni .times")
+var PSResults = []
+var PSStatus = 0
+
+PSTimer.html("00:00:00")
+PSTimes.empty()
+PSObnovit.hide()
+PSStop.hide()
+PSDalsi.hide()
+PSTimes.hide()
+
+function fPSStart() {
+	PSStatus = 1
+	reset()
+	start()
+	PSStart.hide()
+	PSObnovit.show()
+	PSStop.show()
+}
+
+function fPSStop() {
+	PSStatus = 2
+	stop()
+	update()
+	PSStop.hide()
+	PSResults.push(x.time())
+	PSShowResults()
+
+	if (PSResults.length < 5) {
+		PSDalsi.show()
+	}
+}
+
+function fPSObnovit() {
+	PSStatus = 0
+	makeScramble()
+	reset()
+	PSResults = []
+	PSObnovit.hide()
+	PSDalsi.hide()
+	PSStop.hide()
+	PSTimes.hide()
+	PSTimes.empty()
+	PSStart.show()
+}
+
+function fPSDalsi() {
+	PSStatus = 3
+	makeScramble()
+	reset()
+	PSDalsi.hide()
+	PSStart.show()
+}
+
+function PSShowResults() {
+	var resultsCount = PSResults.length
+	if (resultsCount == 0 ) {
+		return
+	}
+	PSTimes.show()
+	PSTimes.empty()
+	var min = Math.min.apply(null, PSResults),
+		max = Math.max.apply(null, PSResults);
+	var average = 0;
+	var countForAverage = 0
+	for (var i = 0; i < resultsCount; i++) {
+		var item = $("<li>" + formatTime(PSResults[i]) + "</li>")
+		if (PSResults[i] == min) {
+			item.addClass("best-time")
+		} else if (PSResults[i] == max) {
+			item.addClass("worst-time")
+		} else {
+			average += PSResults[i]
+			countForAverage++
+		}
+		PSTimes.append(item)
+	}
+	if (resultsCount == 5) {
+		average = Math.ceil(average / countForAverage)
+		var item = $("<li>" + formatTime(average) + "</li>")
+		item.addClass("score")
+		PSTimes.append(item)
+	}
+}
+
+PSStart.click(fPSStart)
+PSStop.click(fPSStop)
+PSObnovit.click(fPSObnovit)
+PSDalsi.click(fPSDalsi)
+
+
+
+////////////////////////
+// SCRAMLE
+////////////////////////
 
 function makeScramble()
 {
@@ -109,8 +252,40 @@ function makeScramble()
 
 makeScramble()
 
-
-
 $(".scramble .refresh").click	(function() {
 	makeScramble()
 })
+
+////////////////////////
+// SPACEBAR
+////////////////////////
+
+window.onkeydown = function(e) {
+	if (e.keyCode == 32 //&& e.target == document.body
+	 ) {
+		e.preventDefault();
+		if (mode == "JS") {
+			if (JSStatus == 0) {
+				fJSStart()
+			} else if (JSStatus == 1) {
+				fJSStop()
+			} else if (JSStatus == 2) {
+				fJSObnovit()
+			}
+		} else if (mode == "PS") {
+			if (PSStatus == 0) {
+				fPSStart()
+			} else if (PSStatus == 1) {
+				fPSStop()
+			} else if (PSStatus == 2) {
+				if (PSResults.length < 5) {
+					fPSDalsi()
+				} else {
+					fPSObnovit()
+				}
+			} else if (PSStatus == 3) {
+				fPSStart()
+			}
+		}
+	}
+};

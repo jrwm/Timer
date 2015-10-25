@@ -83,15 +83,21 @@ function reset() {
 ////////////////////////
 
 var mode = "JS"
+var scrambleButton = $(".scramble .refresh")
+
 $(".tabs .jedno-slozeni a").click(function() {
 	mode = "JS"
-	console.log("mode JS")
+	scrambleButton.unbind()
+	scrambleButton.click(fJSObnovit)
 })
 
 $(".tabs .prumer-z-peti-slozeni a").click(function() {
 	mode = "PS"
-	console.log("mode PS")
+	scrambleButton.unbind()
+	scrambleButton.click(fPSObnovit)
 })
+
+
 
 
 ////////////////////////
@@ -104,9 +110,10 @@ var JSStart = $("#jedno-slozeni .start")
 var JSStop = $("#jedno-slozeni .stop")
 var JSStatus = 0
 
-JSTimer.html("00:00:00")
+JSTimer.html("00:00:000")
 JSObnovit.hide()
 JSStop.hide()
+scrambleButton.click(fJSObnovit)
 
 function fJSStart() {
 	JSStatus = 1
@@ -148,7 +155,7 @@ var PSTimes = $("#prumer-z-peti-slozeni .times")
 var PSResults = []
 var PSStatus = 0
 
-PSTimer.html("00:00:00")
+PSTimer.html("00:00:000")
 PSTimes.empty()
 PSObnovit.hide()
 PSStop.hide()
@@ -251,10 +258,6 @@ function makeScramble()
 }
 
 makeScramble()
-
-$(".scramble .refresh").click	(function() {
-	makeScramble()
-})
 
 ////////////////////////
 // SPACEBAR

@@ -10,9 +10,6 @@
 	Max width 800px
 -------------------------------------------------------------*/
 @media (max-width: 800px) {
-	.content .timer {
-		font-size: 100px;
-	}
 	.scramble li {
 		width: 40px;
 		height: 30px;
@@ -22,11 +19,8 @@
 		-moz-border-radius: 4px;
 		border-radius: 4px;
 	}
-	.content {
-		background: #F4F7FF;
-		padding: 0 0 0 0;
-		width: 100%;
-		text-align: center;
+	.topbar {
+		display: block;
 	}
 	.header:after {
 		content: " ";
@@ -34,6 +28,27 @@
 		display: block;
 		height: 0;
 		clear: both;
+	}
+	.sidebar {
+		-webkit-transition: all 0.4s ease;
+		        transition: all 0.4s ease;
+		left: -118px;
+	}
+	.active-nav .sidebar {
+		left: 0;
+	}
+	.sidebar .cubes {
+		margin: 40px 0 0 30px;
+	}
+	.content {
+		-webkit-transition: all 0.4s ease;
+		        transition: all 0.4s ease;
+		padding: 0 0 0 0;
+		width: 100%;
+		text-align: center;
+	}
+	.active-nav .content {
+		padding: 0 0 0 118px;
 	}
 	.content .tabs {
 		padding: 0 30px;
@@ -53,10 +68,19 @@
 		color: #2979FF;
 		text-decoration: none;
 	}
-	.sidebar {
-		display: none;
+	.content .timer {
+		font-size: 100px;
 	}
-}
+	.times {
+		padding: 0 30px;
+	}
+	.times li {
+		width: 49%;
+		margin: 0 2% 2% 0;
+	}
+	.times li:nth-child(even) {
+		margin: 0 0 2% 0;
+	}
 /*------------------------------------------------------------
 	Max width 480px
 -------------------------------------------------------------*/
@@ -67,12 +91,40 @@
 	.header {
 		padding: 20px 20px 15px 20px;
 	}
-	.content .timer {
-		margin: 20px 0 0 0;
-		font-size: 60px;
+	.topbar {
+		padding: 0 0 0 20px;
 	}
+		.sidebar {
+			width: 98px;
+			-webkit-transition: all 0.4s ease;
+			        transition: all 0.4s ease;
+			left: -98px;
+		}
+		.active-nav .sidebar {
+			left: 0;
+		}
+		.sidebar .cubes {
+			margin: 40px 0 0 19px;
+		}
+		.content {
+			-webkit-transition: all 0.4s ease;
+			        transition: all 0.4s ease;
+			padding: 0 0 0 0;
+			width: 100%;
+			text-align: center;
+		}
+		.active-nav .content {
+			padding: 0 0 0 98px;
+		}
 	.content .tabs {
 		margin: 20px auto 20px auto;
+		padding: 0 20px;
+	}
+	.content .timer {
+		margin: 20px 0 0 0;
+		font-size: 48px;
+	}
+	.times {
 		padding: 0 20px;
 	}
 }
@@ -83,10 +135,33 @@
 	.header {
 		padding: 10px 10px 5px 10px;
 	}
-	.content .timer {
-		font-size: 50px;
+	.topbar {
+		padding: 0 0 0 10px;
 	}
+		.sidebar {
+			width: 78px;
+			-webkit-transition: all 0.4s ease;
+			        transition: all 0.4s ease;
+			left: -78px;
+		}
+		.active-nav .sidebar {
+			left: 0;
+		}
+		.sidebar .cubes {
+			margin: 40px 0 0 8px;
+		}
+		.content {
+			-webkit-transition: all 0.4s ease;
+			        transition: all 0.4s ease;
+			padding: 0 0 0 0;
+			width: 100%;
+			text-align: center;
+		}
+		.active-nav .content {
+			padding: 0 0 0 78px;
+		}
 	.content .tabs {
+		margin: 10px auto 20px auto;
 		padding: 0 10px;
 	}
 	.content .tabs li {
@@ -114,6 +189,12 @@
 		     -webkit-border-top-right-radius: 0;
 		         -moz-border-radius-topright: 0;
 		             border-top-right-radius: 0;
+	}
+	.content .timer {
+		font-size: 38px;
+	}
+	.times {
+		padding: 0 10px;
 	}
 }
 

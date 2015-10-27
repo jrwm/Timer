@@ -31,6 +31,9 @@
 	</div>
 
 	<div class="content">
+		<div class="topbar">
+			<span class="button-menu nav-toggle-btn">Menu</span>
+		</div>
 		<div class="header">
 			<ul class="scramble">
 				<li>R</li>
@@ -58,48 +61,58 @@
 		</div>
 
 		<ul class="tabs">
-			<li class="jedno-slozeni"><a href="#jedno-slozeni">Jedno složení</a></li>
-			<li class="prumer-z-peti-slozeni"><a href="#prumer-z-peti-slozeni">Průměr z pěti složení</a></li>
+			<li class="jedno-slozeni"><a href="#jedno-slozeni">Single</a></li>
+			<li class="prumer-z-peti-slozeni"><a href="#prumer-z-peti-slozeni">Average</a></li>
 		</ul>
 		<div id="jedno-slozeni" class="jedno-slozeni">
 			<p class="timer">00:12:38</p>
-			<div class="container">
-				<ul class="buttons">
-					<li><a href="#" class="button obnovit">Obnovit</a></li>
-					<li><a href="#" class="button start">Start Solved</a></li>
-					<li><a href="#" class="button stop">Stop</a></li>
-				</ul>
-			</div>
+			<ul class="buttons">
+				<li><a href="#" class="button obnovit"><span>Obnovit</span></a></li>
+				<li><a href="#" class="button start">Start Solved</a></li>
+				<li><a href="#" class="button stop">Stop</a></li>
+			</ul>
 		</div>
 		<div id="prumer-z-peti-slozeni" class="prumer-z-peti-slozeni">
 			<p class="timer">00:14:34</p>
-			<div class="container">
-				<ul class="times">
-					<li>00:12:862</li>
-					<li class="best-time">00:09:139</li>
-					<li>00:13:128</li>
-					<li>00:12:362</li>
-					<li class="worst-time">00:22:742</li>
-					<li class="score">00:12:784</li>
-				</ul>
-			</div>
+			<ul class="times">
+				<li>00:12:862</li>
+				<li class="best-time">00:09:139</li>
+				<li>00:13:128</li>
+				<li>00:12:362</li>
+				<li class="worst-time">00:22:742</li>
+				<li class="score">00:12:784</li>
+			</ul>
 
-			<div style="clear:both;"></div>
-
-			<div class="container">
-				<ul class="buttons">
-					<li><a href="#" class="button obnovit">Obnovit</a></li>
-					<li><a href="#" class="button start">Start Solved</a><li>
-					<li><a href="#" class="button stop">Stop</a><li>
-					<li><a href="#" class="button dalsi">Další</a><li>
-				</ul>
-			</div>
+			<ul class="buttons">
+				<li><a href="#" class="button obnovit"><span>Obnovit</span></a></li>
+				<li><a href="#" class="button start">Start Solved</a><li>
+				<li><a href="#" class="button stop">Stop</a><li>
+				<li><a href="#" class="button dalsi">Další</a><li>
+			</ul>
 		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script language="javascript" type="text/javascript" src="js/tabs.js"></script>
 	<script language="javascript" type="text/javascript" src="js/jenik.js"></script>
+	<script type="text/javascript">
+        
+        (function() {
+            
+            var bodyEl = $('body'),
+                navToggleBtn = bodyEl.find('.nav-toggle-btn');
+            
+            navToggleBtn.on('click', function(e) {
+                bodyEl.toggleClass('active-nav');
+                e.preventDefault();
+            });
+            
+            
+            
+        })();
+        
+        
+    </script>
 </body>
 </html>
 

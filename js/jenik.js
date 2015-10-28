@@ -110,10 +110,15 @@ var JSStart = $("#jedno-slozeni .start")
 var JSStop = $("#jedno-slozeni .stop")
 var JSStatus = 0
 
-JSTimer.html("00:00:000")
-JSObnovit.hide()
-JSStop.hide()
-scrambleButton.click(fJSObnovit)
+function initJednoSlozeni() {
+	JSStatus = 0
+	JSTimer.html("00:00:000")
+	JSObnovit.hide()
+	JSStop.hide()
+	scrambleButton.click(fJSObnovit)
+}
+
+initJednoSlozeni()
 
 function fJSStart() {
 	JSStatus = 1
@@ -131,8 +136,9 @@ function fJSStop() {
 }
 
 function fJSObnovit() {
+	makeItHappen(ctype)
 	JSStatus = 0
-	makeScramble()
+	makeScramble(aktalgoritm)
 	reset()
 	JSObnovit.hide()
 	JSStart.show()
@@ -155,12 +161,18 @@ var PSTimes = $("#prumer-z-peti-slozeni .times")
 var PSResults = []
 var PSStatus = 0
 
-PSTimer.html("00:00:000")
-PSTimes.empty()
-PSObnovit.hide()
-PSStop.hide()
-PSDalsi.hide()
-PSTimes.hide()
+function initPetSlozeni()
+{
+	PSStatus = 0
+	PSTimer.html("00:00:000")
+	PSTimes.empty()
+	PSObnovit.hide()
+	PSStop.hide()
+	PSDalsi.hide()
+	PSTimes.hide()
+}
+
+initPetSlozeni()
 
 function fPSStart() {
 	PSStatus = 1
@@ -185,8 +197,9 @@ function fPSStop() {
 }
 
 function fPSObnovit() {
+	makeItHappen(ctype)
 	PSStatus = 0
-	makeScramble()
+	makeScramble(aktalgoritm)
 	reset()
 	PSResults = []
 	PSObnovit.hide()
@@ -198,8 +211,9 @@ function fPSObnovit() {
 }
 
 function fPSDalsi() {
+	makeItHappen(ctype)
 	PSStatus = 3
-	makeScramble()
+	makeScramble(aktalgoritm)
 	reset()
 	PSDalsi.hide()
 	PSStart.show()
@@ -247,17 +261,26 @@ PSDalsi.click(fPSDalsi)
 // SCRAMLE
 ////////////////////////
 
-function makeScramble()
+function makeScramble(input)
 {
-	var options = ["L", "R", "U", "D", "F", "B", "L’", "R’", "U’", "D’", "F’", "B’", "L2", "R2", "U2", "D2", "F2", "B2"];
+
+	input = input.trim()
+	input = input.replace(/\//g,'');
+	console.log(input)
+
+	var options = input.split(" ")
+	console.log(options)
 	$(".scramble li[class!='refresh']").remove()
-	for (var i = 0; i < 20; i++) {
-		var item = options[Math.floor(Math.random() * options.length)];
+	for (var i = 0; i < options.length; i++) {
+		var item = options[i];
+		if (item == "") {
+			continue;
+		}
 		$(".scramble").prepend("<li>" + item + "</li>")
 	}
 }
 
-makeScramble()
+$(".scramble li[class!='refresh']").remove()
 
 ////////////////////////
 // SPACEBAR

@@ -5022,8 +5022,11 @@ function domanyscrambles() {
 }
 
 function thinkandscramble() {
+
+	doScramble();
+	console.log(aktalgoritm)
 	//document.getElementById("tobbscrmble").innerHTML = '<div class="thinking"><div></div>Please wait</div>';
-	setTimeout("domanyscrambles()", 100)
+	//setTimeout("domanyscrambles()", 100)
 }
 
 function crot(e, t) {

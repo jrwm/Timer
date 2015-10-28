@@ -170,6 +170,7 @@ function initPetSlozeni()
 	PSStop.hide()
 	PSDalsi.hide()
 	PSTimes.hide()
+	PSResults = []
 }
 
 initPetSlozeni()

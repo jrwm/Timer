@@ -736,12 +736,12 @@ function doszuksegesrotations(e, t) {
 		forduly(t);
 		sliceu(0, t)
 	}
-	if (e == "U<sub>2</sub>") {
+	if (e == "U<span>2</span>") {
 		forduly(t);
 		sliceu(0, t);
 		sliceu(1, t)
 	}
-	if (e == "U<sub>2</sub>'") {
+	if (e == "U<span>2</span>'") {
 		forduly(t);
 		sliceu(0, t);
 		sliceu(1, t);
@@ -752,7 +752,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(0, t);
 		sliceu(1, t)
 	}
-	if (e == "U<sub>2</sub>2") {
+	if (e == "U<span>2</span>2") {
 		forduly(t);
 		sliceu(0, t);
 		sliceu(1, t);
@@ -760,13 +760,13 @@ function doszuksegesrotations(e, t) {
 		sliceu(0, t);
 		sliceu(1, t)
 	}
-	if (e == "U<sub>3</sub>") {
+	if (e == "U<span>3</span>") {
 		forduly(t);
 		sliceu(0, t);
 		sliceu(1, t);
 		sliceu(2, t)
 	}
-	if (e == "U<sub>3</sub>'") {
+	if (e == "U<span>3</span>'") {
 		forduly(t);
 		sliceu(0, t);
 		sliceu(1, t);
@@ -780,7 +780,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(1, t);
 		sliceu(2, t)
 	}
-	if (e == "U<sub>3</sub>2") {
+	if (e == "U<span>3</span>2") {
 		forduly(t);
 		sliceu(0, t);
 		sliceu(1, t);
@@ -790,14 +790,14 @@ function doszuksegesrotations(e, t) {
 		sliceu(1, t);
 		sliceu(2, t)
 	}
-	if (e == "U<sub>4</sub>") {
+	if (e == "U<span>4</span>") {
 		forduly(t);
 		sliceu(0, t);
 		sliceu(1, t);
 		sliceu(2, t);
 		sliceu(3, t)
 	}
-	if (e == "U<sub>4</sub>'") {
+	if (e == "U<span>4</span>'") {
 		forduly(t);
 		sliceu(0, t);
 		sliceu(1, t);
@@ -814,7 +814,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(2, t);
 		sliceu(3, t)
 	}
-	if (e == "U<sub>4</sub>2") {
+	if (e == "U<span>4</span>2") {
 		forduly(t);
 		sliceu(0, t);
 		sliceu(1, t);
@@ -826,7 +826,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(2, t);
 		sliceu(3, t)
 	}
-	if (e == "U<sub>5</sub>") {
+	if (e == "U<span>5</span>") {
 		forduly(t);
 		sliceu(0, t);
 		sliceu(1, t);
@@ -834,7 +834,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(3, t);
 		sliceu(4, t)
 	}
-	if (e == "U<sub>5</sub>'") {
+	if (e == "U<span>5</span>'") {
 		forduly(t);
 		sliceu(0, t);
 		sliceu(1, t);
@@ -854,7 +854,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(3, t);
 		sliceu(4, t)
 	}
-	if (e == "U<sub>5</sub>2") {
+	if (e == "U<span>5</span>2") {
 		forduly(t);
 		sliceu(0, t);
 		sliceu(1, t);
@@ -886,12 +886,12 @@ function doszuksegesrotations(e, t) {
 		fordrly(t);
 		slicer(0, t)
 	}
-	if (e == "R<sub>2</sub>") {
+	if (e == "R<span>2</span>") {
 		fordrly(t);
 		slicer(0, t);
 		slicer(1, t)
 	}
-	if (e == "R<sub>2</sub>'") {
+	if (e == "R<span>2</span>'") {
 		fordrly(t);
 		slicer(0, t);
 		slicer(1, t);
@@ -902,7 +902,7 @@ function doszuksegesrotations(e, t) {
 		slicer(0, t);
 		slicer(1, t)
 	}
-	if (e == "R<sub>2</sub>2") {
+	if (e == "R<span>2</span>2") {
 		fordrly(t);
 		slicer(0, t);
 		slicer(1, t);
@@ -910,13 +910,13 @@ function doszuksegesrotations(e, t) {
 		slicer(0, t);
 		slicer(1, t)
 	}
-	if (e == "R<sub>3</sub>") {
+	if (e == "R<span>3</span>") {
 		fordrly(t);
 		slicer(0, t);
 		slicer(1, t);
 		slicer(2, t)
 	}
-	if (e == "R<sub>3</sub>'") {
+	if (e == "R<span>3</span>'") {
 		fordrly(t);
 		slicer(0, t);
 		slicer(1, t);
@@ -930,7 +930,7 @@ function doszuksegesrotations(e, t) {
 		slicer(1, t);
 		slicer(2, t)
 	}
-	if (e == "R<sub>3</sub>2") {
+	if (e == "R<span>3</span>2") {
 		fordrly(t);
 		slicer(0, t);
 		slicer(1, t);
@@ -940,14 +940,14 @@ function doszuksegesrotations(e, t) {
 		slicer(1, t);
 		slicer(2, t)
 	}
-	if (e == "R<sub>4</sub>") {
+	if (e == "R<span>4</span>") {
 		fordrly(t);
 		slicer(0, t);
 		slicer(1, t);
 		slicer(2, t);
 		slicer(3, t)
 	}
-	if (e == "R<sub>4</sub>'") {
+	if (e == "R<span>4</span>'") {
 		fordrly(t);
 		slicer(0, t);
 		slicer(1, t);
@@ -964,7 +964,7 @@ function doszuksegesrotations(e, t) {
 		slicer(2, t);
 		slicer(3, t)
 	}
-	if (e == "R<sub>4</sub>2") {
+	if (e == "R<span>4</span>2") {
 		fordrly(t);
 		slicer(0, t);
 		slicer(1, t);
@@ -976,7 +976,7 @@ function doszuksegesrotations(e, t) {
 		slicer(2, t);
 		slicer(3, t)
 	}
-	if (e == "R<sub>5</sub>") {
+	if (e == "R<span>5</span>") {
 		fordrly(t);
 		slicer(0, t);
 		slicer(1, t);
@@ -984,7 +984,7 @@ function doszuksegesrotations(e, t) {
 		slicer(3, t);
 		slicer(4, t)
 	}
-	if (e == "R<sub>5</sub>'") {
+	if (e == "R<span>5</span>'") {
 		fordrly(t);
 		slicer(0, t);
 		slicer(1, t);
@@ -1004,7 +1004,7 @@ function doszuksegesrotations(e, t) {
 		slicer(3, t);
 		slicer(4, t)
 	}
-	if (e == "R<sub>5</sub>2") {
+	if (e == "R<span>5</span>2") {
 		fordrly(t);
 		slicer(0, t);
 		slicer(1, t);
@@ -1036,12 +1036,12 @@ function doszuksegesrotations(e, t) {
 		fordfly(t);
 		slicef(0, t)
 	}
-	if (e == "F<sub>2</sub>") {
+	if (e == "F<span>2</span>") {
 		fordfly(t);
 		slicef(0, t);
 		slicef(1, t)
 	}
-	if (e == "F<sub>2</sub>'") {
+	if (e == "F<span>2</span>'") {
 		fordfly(t);
 		slicef(0, t);
 		slicef(1, t);
@@ -1052,7 +1052,7 @@ function doszuksegesrotations(e, t) {
 		slicef(0, t);
 		slicef(1, t)
 	}
-	if (e == "F<sub>2</sub>2") {
+	if (e == "F<span>2</span>2") {
 		fordfly(t);
 		slicef(0, t);
 		slicef(1, t);
@@ -1060,13 +1060,13 @@ function doszuksegesrotations(e, t) {
 		slicef(0, t);
 		slicef(1, t)
 	}
-	if (e == "F<sub>3</sub>") {
+	if (e == "F<span>3</span>") {
 		fordfly(t);
 		slicef(0, t);
 		slicef(1, t);
 		slicef(2, t)
 	}
-	if (e == "F<sub>3</sub>'") {
+	if (e == "F<span>3</span>'") {
 		fordfly(t);
 		slicef(0, t);
 		slicef(1, t);
@@ -1080,7 +1080,7 @@ function doszuksegesrotations(e, t) {
 		slicef(1, t);
 		slicef(2, t)
 	}
-	if (e == "F<sub>3</sub>2") {
+	if (e == "F<span>3</span>2") {
 		fordfly(t);
 		slicef(0, t);
 		slicef(1, t);
@@ -1090,14 +1090,14 @@ function doszuksegesrotations(e, t) {
 		slicef(1, t);
 		slicef(2, t)
 	}
-	if (e == "F<sub>4</sub>") {
+	if (e == "F<span>4</span>") {
 		fordfly(t);
 		slicef(0, t);
 		slicef(1, t);
 		slicef(2, t);
 		slicef(3, t)
 	}
-	if (e == "F<sub>4</sub>'") {
+	if (e == "F<span>4</span>'") {
 		fordfly(t);
 		slicef(0, t);
 		slicef(1, t);
@@ -1114,7 +1114,7 @@ function doszuksegesrotations(e, t) {
 		slicef(2, t);
 		slicef(3, t)
 	}
-	if (e == "F<sub>4</sub>2") {
+	if (e == "F<span>4</span>2") {
 		fordfly(t);
 		slicef(0, t);
 		slicef(1, t);
@@ -1126,7 +1126,7 @@ function doszuksegesrotations(e, t) {
 		slicef(2, t);
 		slicef(3, t)
 	}
-	if (e == "F<sub>5</sub>") {
+	if (e == "F<span>5</span>") {
 		fordfly(t);
 		slicef(0, t);
 		slicef(1, t);
@@ -1134,7 +1134,7 @@ function doszuksegesrotations(e, t) {
 		slicef(3, t);
 		slicef(4, t)
 	}
-	if (e == "F<sub>5</sub>'") {
+	if (e == "F<span>5</span>'") {
 		fordfly(t);
 		slicef(0, t);
 		slicef(1, t);
@@ -1154,7 +1154,7 @@ function doszuksegesrotations(e, t) {
 		slicef(3, t);
 		slicef(4, t)
 	}
-	if (e == "F<sub>5</sub>2") {
+	if (e == "F<span>5</span>2") {
 		fordfly(t);
 		slicef(0, t);
 		slicef(1, t);
@@ -1186,7 +1186,7 @@ function doszuksegesrotations(e, t) {
 		slicef(t - 1, t);
 		slicef(t - 1, t)
 	}
-	if (e == "B<sub>2</sub>") {
+	if (e == "B<span>2</span>") {
 		fordbly(t);
 		slicef(t - 1, t);
 		slicef(t - 1, t);
@@ -1195,14 +1195,14 @@ function doszuksegesrotations(e, t) {
 		slicef(t - 2, t);
 		slicef(t - 2, t)
 	}
-	if (e == "B<sub>2</sub>'") {
+	if (e == "B<span>2</span>'") {
 		fordbly(t);
 		fordbly(t);
 		fordbly(t);
 		slicef(t - 1, t);
 		slicef(t - 2, t)
 	}
-	if (e == "B<sub>2</sub>2") {
+	if (e == "B<span>2</span>2") {
 		fordbly(t);
 		fordbly(t);
 		slicef(t - 1, t);
@@ -1210,7 +1210,7 @@ function doszuksegesrotations(e, t) {
 		slicef(t - 2, t);
 		slicef(t - 2, t)
 	}
-	if (e == "B<sub>3</sub>") {
+	if (e == "B<span>3</span>") {
 		fordbly(t);
 		slicef(t - 1, t);
 		slicef(t - 1, t);
@@ -1222,7 +1222,7 @@ function doszuksegesrotations(e, t) {
 		slicef(t - 3, t);
 		slicef(t - 3, t)
 	}
-	if (e == "B<sub>3</sub>'") {
+	if (e == "B<span>3</span>'") {
 		fordbly(t);
 		fordbly(t);
 		fordbly(t);
@@ -1230,7 +1230,7 @@ function doszuksegesrotations(e, t) {
 		slicef(t - 2, t);
 		slicef(t - 3, t)
 	}
-	if (e == "B<sub>3</sub>2") {
+	if (e == "B<span>3</span>2") {
 		fordbly(t);
 		fordbly(t);
 		slicef(t - 1, t);
@@ -1240,7 +1240,7 @@ function doszuksegesrotations(e, t) {
 		slicef(t - 3, t);
 		slicef(t - 3, t)
 	}
-	if (e == "B<sub>4</sub>") {
+	if (e == "B<span>4</span>") {
 		fordbly(t);
 		slicef(t - 1, t);
 		slicef(t - 1, t);
@@ -1255,7 +1255,7 @@ function doszuksegesrotations(e, t) {
 		slicef(t - 4, t);
 		slicef(t - 4, t)
 	}
-	if (e == "B<sub>4</sub>'") {
+	if (e == "B<span>4</span>'") {
 		fordbly(t);
 		fordbly(t);
 		fordbly(t);
@@ -1264,7 +1264,7 @@ function doszuksegesrotations(e, t) {
 		slicef(t - 3, t);
 		slicef(t - 4, t)
 	}
-	if (e == "B<sub>4</sub>2") {
+	if (e == "B<span>4</span>2") {
 		fordbly(t);
 		fordbly(t);
 		slicef(t - 1, t);
@@ -1276,7 +1276,7 @@ function doszuksegesrotations(e, t) {
 		slicef(t - 4, t);
 		slicef(t - 4, t)
 	}
-	if (e == "B<sub>5</sub>") {
+	if (e == "B<span>5</span>") {
 		fordbly(t);
 		slicef(t - 1, t);
 		slicef(t - 1, t);
@@ -1294,7 +1294,7 @@ function doszuksegesrotations(e, t) {
 		slicef(t - 5, t);
 		slicef(t - 5, t)
 	}
-	if (e == "B<sub>5</sub>'") {
+	if (e == "B<span>5</span>'") {
 		fordbly(t);
 		fordbly(t);
 		fordbly(t);
@@ -1304,7 +1304,7 @@ function doszuksegesrotations(e, t) {
 		slicef(t - 4, t);
 		slicef(t - 5, t)
 	}
-	if (e == "B<sub>5</sub>2") {
+	if (e == "B<span>5</span>2") {
 		fordbly(t);
 		fordbly(t);
 		slicef(t - 1, t);
@@ -1336,7 +1336,7 @@ function doszuksegesrotations(e, t) {
 		slicer(t - 1, t);
 		slicer(t - 1, t)
 	}
-	if (e == "L<sub>2</sub>") {
+	if (e == "L<span>2</span>") {
 		fordlly(t);
 		slicer(t - 1, t);
 		slicer(t - 1, t);
@@ -1345,14 +1345,14 @@ function doszuksegesrotations(e, t) {
 		slicer(t - 2, t);
 		slicer(t - 2, t)
 	}
-	if (e == "L<sub>2</sub>'") {
+	if (e == "L<span>2</span>'") {
 		fordlly(t);
 		fordlly(t);
 		fordlly(t);
 		slicer(t - 1, t);
 		slicer(t - 2, t)
 	}
-	if (e == "L<sub>2</sub>2") {
+	if (e == "L<span>2</span>2") {
 		fordlly(t);
 		fordlly(t);
 		slicer(t - 1, t);
@@ -1360,7 +1360,7 @@ function doszuksegesrotations(e, t) {
 		slicer(t - 2, t);
 		slicer(t - 2, t)
 	}
-	if (e == "L<sub>3</sub>") {
+	if (e == "L<span>3</span>") {
 		fordlly(t);
 		slicer(t - 1, t);
 		slicer(t - 1, t);
@@ -1372,7 +1372,7 @@ function doszuksegesrotations(e, t) {
 		slicer(t - 3, t);
 		slicer(t - 3, t)
 	}
-	if (e == "L<sub>3</sub>'") {
+	if (e == "L<span>3</span>'") {
 		fordlly(t);
 		fordlly(t);
 		fordlly(t);
@@ -1380,7 +1380,7 @@ function doszuksegesrotations(e, t) {
 		slicer(t - 2, t);
 		slicer(t - 3, t)
 	}
-	if (e == "L<sub>3</sub>2") {
+	if (e == "L<span>3</span>2") {
 		fordlly(t);
 		fordlly(t);
 		slicer(t - 1, t);
@@ -1390,7 +1390,7 @@ function doszuksegesrotations(e, t) {
 		slicer(t - 3, t);
 		slicer(t - 3, t)
 	}
-	if (e == "L<sub>4</sub>") {
+	if (e == "L<span>4</span>") {
 		fordlly(t);
 		slicer(t - 1, t);
 		slicer(t - 1, t);
@@ -1405,7 +1405,7 @@ function doszuksegesrotations(e, t) {
 		slicer(t - 4, t);
 		slicer(t - 4, t)
 	}
-	if (e == "L<sub>4</sub>'") {
+	if (e == "L<span>4</span>'") {
 		fordlly(t);
 		fordlly(t);
 		fordlly(t);
@@ -1414,7 +1414,7 @@ function doszuksegesrotations(e, t) {
 		slicer(t - 3, t);
 		slicer(t - 4, t)
 	}
-	if (e == "L<sub>4</sub>2") {
+	if (e == "L<span>4</span>2") {
 		fordlly(t);
 		fordlly(t);
 		slicer(t - 1, t);
@@ -1426,7 +1426,7 @@ function doszuksegesrotations(e, t) {
 		slicer(t - 4, t);
 		slicer(t - 4, t)
 	}
-	if (e == "L<sub>5</sub>") {
+	if (e == "L<span>5</span>") {
 		fordlly(t);
 		slicer(t - 1, t);
 		slicer(t - 1, t);
@@ -1444,7 +1444,7 @@ function doszuksegesrotations(e, t) {
 		slicer(t - 5, t);
 		slicer(t - 5, t)
 	}
-	if (e == "L<sub>5</sub>'") {
+	if (e == "L<span>5</span>'") {
 		fordlly(t);
 		fordlly(t);
 		fordlly(t);
@@ -1454,7 +1454,7 @@ function doszuksegesrotations(e, t) {
 		slicer(t - 4, t);
 		slicer(t - 5, t)
 	}
-	if (e == "L<sub>5</sub>2") {
+	if (e == "L<span>5</span>2") {
 		fordlly(t);
 		fordlly(t);
 		slicer(t - 1, t);
@@ -1486,7 +1486,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(t - 1, t);
 		sliceu(t - 1, t)
 	}
-	if (e == "D<sub>2</sub>") {
+	if (e == "D<span>2</span>") {
 		forddly(t);
 		sliceu(t - 1, t);
 		sliceu(t - 1, t);
@@ -1495,14 +1495,14 @@ function doszuksegesrotations(e, t) {
 		sliceu(t - 2, t);
 		sliceu(t - 2, t)
 	}
-	if (e == "D<sub>2</sub>'") {
+	if (e == "D<span>2</span>'") {
 		forddly(t);
 		forddly(t);
 		forddly(t);
 		sliceu(t - 1, t);
 		sliceu(t - 2, t)
 	}
-	if (e == "D<sub>2</sub>2") {
+	if (e == "D<span>2</span>2") {
 		forddly(t);
 		forddly(t);
 		sliceu(t - 1, t);
@@ -1510,7 +1510,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(t - 2, t);
 		sliceu(t - 2, t)
 	}
-	if (e == "D<sub>3</sub>") {
+	if (e == "D<span>3</span>") {
 		forddly(t);
 		sliceu(t - 1, t);
 		sliceu(t - 1, t);
@@ -1522,7 +1522,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(t - 3, t);
 		sliceu(t - 3, t)
 	}
-	if (e == "D<sub>3</sub>'") {
+	if (e == "D<span>3</span>'") {
 		forddly(t);
 		forddly(t);
 		forddly(t);
@@ -1530,7 +1530,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(t - 2, t);
 		sliceu(t - 3, t)
 	}
-	if (e == "D<sub>3</sub>2") {
+	if (e == "D<span>3</span>2") {
 		forddly(t);
 		forddly(t);
 		sliceu(t - 1, t);
@@ -1540,7 +1540,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(t - 3, t);
 		sliceu(t - 3, t)
 	}
-	if (e == "D<sub>4</sub>") {
+	if (e == "D<span>4</span>") {
 		forddly(t);
 		sliceu(t - 1, t);
 		sliceu(t - 1, t);
@@ -1555,7 +1555,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(t - 4, t);
 		sliceu(t - 4, t)
 	}
-	if (e == "D<sub>4</sub>'") {
+	if (e == "D<span>4</span>'") {
 		forddly(t);
 		forddly(t);
 		forddly(t);
@@ -1564,7 +1564,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(t - 3, t);
 		sliceu(t - 4, t)
 	}
-	if (e == "D<sub>4</sub>2") {
+	if (e == "D<span>4</span>2") {
 		forddly(t);
 		forddly(t);
 		sliceu(t - 1, t);
@@ -1576,7 +1576,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(t - 4, t);
 		sliceu(t - 4, t)
 	}
-	if (e == "D<sub>5</sub>") {
+	if (e == "D<span>5</span>") {
 		forddly(t);
 		sliceu(t - 1, t);
 		sliceu(t - 1, t);
@@ -1594,7 +1594,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(t - 5, t);
 		sliceu(t - 5, t)
 	}
-	if (e == "D<sub>5</sub>'") {
+	if (e == "D<span>5</span>'") {
 		forddly(t);
 		forddly(t);
 		forddly(t);
@@ -1604,7 +1604,7 @@ function doszuksegesrotations(e, t) {
 		sliceu(t - 4, t);
 		sliceu(t - 5, t)
 	}
-	if (e == "D<sub>5</sub>2") {
+	if (e == "D<span>5</span>2") {
 		forddly(t);
 		forddly(t);
 		sliceu(t - 1, t);
@@ -1847,13 +1847,13 @@ function doScramble() {
 					s = s + "'"
 				}
 				if (n == 3) {
-					s = s + "<sub>2</sub>"
+					s = s + "<span>2</span>"
 				}
 				if (n == 4) {
-					s = s + "<sub>2</sub>'"
+					s = s + "<span>2</span>'"
 				}
 				if (n == 5) {
-					s = s + "<sub>2</sub>2"
+					s = s + "<span>2</span>2"
 				}
 				doszuksegesrotations(s, ctype + 1);
 				s = s + " ";
@@ -1910,13 +1910,13 @@ function doScramble() {
 					s = s + "'"
 				}
 				if (n == 3) {
-					s = s + "<sub>2</sub>"
+					s = s + "<span>2</span>"
 				}
 				if (n == 4) {
-					s = s + "<sub>2</sub>'"
+					s = s + "<span>2</span>'"
 				}
 				if (n == 5) {
-					s = s + "<sub>2</sub>2"
+					s = s + "<span>2</span>2"
 				}
 				doszuksegesrotations(s, ctype + 1);
 				s = s + " ";
@@ -1973,22 +1973,22 @@ function doScramble() {
 					s = s + "'"
 				}
 				if (n == 3) {
-					s = s + "<sub>2</sub>"
+					s = s + "<span>2</span>"
 				}
 				if (n == 4) {
-					s = s + "<sub>2</sub>'"
+					s = s + "<span>2</span>'"
 				}
 				if (n == 5) {
-					s = s + "<sub>2</sub>2"
+					s = s + "<span>2</span>2"
 				}
 				if (n == 6) {
-					s = s + "<sub>3</sub>"
+					s = s + "<span>3</span>"
 				}
 				if (n == 7) {
-					s = s + "<sub>3</sub>'"
+					s = s + "<span>3</span>'"
 				}
 				if (n == 8) {
-					s = s + "<sub>3</sub>2"
+					s = s + "<span>3</span>2"
 				}
 				doszuksegesrotations(s, ctype + 1);
 				s = s + " ";
@@ -2045,22 +2045,22 @@ function doScramble() {
 					s = s + "'"
 				}
 				if (n == 3) {
-					s = s + "<sub>2</sub>"
+					s = s + "<span>2</span>"
 				}
 				if (n == 4) {
-					s = s + "<sub>2</sub>'"
+					s = s + "<span>2</span>'"
 				}
 				if (n == 5) {
-					s = s + "<sub>2</sub>2"
+					s = s + "<span>2</span>2"
 				}
 				if (n == 6) {
-					s = s + "<sub>3</sub>"
+					s = s + "<span>3</span>"
 				}
 				if (n == 7) {
-					s = s + "<sub>3</sub>'"
+					s = s + "<span>3</span>'"
 				}
 				if (n == 8) {
-					s = s + "<sub>3</sub>2"
+					s = s + "<span>3</span>2"
 				}
 				doszuksegesrotations(s, ctype + 1);
 				s = s + " ";
@@ -2117,31 +2117,31 @@ function doScramble() {
 					s = s + "'"
 				}
 				if (n == 3) {
-					s = s + "<sub>2</sub>"
+					s = s + "<span>2</span>"
 				}
 				if (n == 4) {
-					s = s + "<sub>2</sub>'"
+					s = s + "<span>2</span>'"
 				}
 				if (n == 5) {
-					s = s + "<sub>2</sub>2"
+					s = s + "<span>2</span>2"
 				}
 				if (n == 6) {
-					s = s + "<sub>3</sub>"
+					s = s + "<span>3</span>"
 				}
 				if (n == 7) {
-					s = s + "<sub>3</sub>'"
+					s = s + "<span>3</span>'"
 				}
 				if (n == 8) {
-					s = s + "<sub>3</sub>2"
+					s = s + "<span>3</span>2"
 				}
 				if (n == 9) {
-					s = s + "<sub>4</sub>"
+					s = s + "<span>4</span>"
 				}
 				if (n == 10) {
-					s = s + "<sub>4</sub>'"
+					s = s + "<span>4</span>'"
 				}
 				if (n == 11) {
-					s = s + "<sub>4</sub>2"
+					s = s + "<span>4</span>2"
 				}
 				doszuksegesrotations(s, ctype + 1);
 				s = s + " ";
@@ -2198,31 +2198,31 @@ function doScramble() {
 					s = s + "'"
 				}
 				if (n == 3) {
-					s = s + "<sub>2</sub>"
+					s = s + "<span>2</span>"
 				}
 				if (n == 4) {
-					s = s + "<sub>2</sub>'"
+					s = s + "<span>2</span>'"
 				}
 				if (n == 5) {
-					s = s + "<sub>2</sub>2"
+					s = s + "<span>2</span>2"
 				}
 				if (n == 6) {
-					s = s + "<sub>3</sub>"
+					s = s + "<span>3</span>"
 				}
 				if (n == 7) {
-					s = s + "<sub>3</sub>'"
+					s = s + "<span>3</span>'"
 				}
 				if (n == 8) {
-					s = s + "<sub>3</sub>2"
+					s = s + "<span>3</span>2"
 				}
 				if (n == 9) {
-					s = s + "<sub>4</sub>"
+					s = s + "<span>4</span>"
 				}
 				if (n == 10) {
-					s = s + "<sub>4</sub>'"
+					s = s + "<span>4</span>'"
 				}
 				if (n == 11) {
-					s = s + "<sub>4</sub>2"
+					s = s + "<span>4</span>2"
 				}
 				doszuksegesrotations(s, ctype + 1);
 				s = s + " ";
@@ -2279,40 +2279,40 @@ function doScramble() {
 					s = s + "'"
 				}
 				if (n == 3) {
-					s = s + "<sub>2</sub>"
+					s = s + "<span>2</span>"
 				}
 				if (n == 4) {
-					s = s + "<sub>2</sub>'"
+					s = s + "<span>2</span>'"
 				}
 				if (n == 5) {
-					s = s + "<sub>2</sub>2"
+					s = s + "<span>2</span>2"
 				}
 				if (n == 6) {
-					s = s + "<sub>3</sub>"
+					s = s + "<span>3</span>"
 				}
 				if (n == 7) {
-					s = s + "<sub>3</sub>'"
+					s = s + "<span>3</span>'"
 				}
 				if (n == 8) {
-					s = s + "<sub>3</sub>2"
+					s = s + "<span>3</span>2"
 				}
 				if (n == 9) {
-					s = s + "<sub>4</sub>"
+					s = s + "<span>4</span>"
 				}
 				if (n == 10) {
-					s = s + "<sub>4</sub>'"
+					s = s + "<span>4</span>'"
 				}
 				if (n == 11) {
-					s = s + "<sub>4</sub>2"
+					s = s + "<span>4</span>2"
 				}
 				if (n == 12) {
-					s = s + "<sub>5</sub>"
+					s = s + "<span>5</span>"
 				}
 				if (n == 13) {
-					s = s + "<sub>5</sub>'"
+					s = s + "<span>5</span>'"
 				}
 				if (n == 14) {
-					s = s + "<sub>5</sub>2"
+					s = s + "<span>5</span>2"
 				}
 				doszuksegesrotations(s, ctype + 1);
 				s = s + " ";
@@ -2369,40 +2369,40 @@ function doScramble() {
 					s = s + "'"
 				}
 				if (n == 3) {
-					s = s + "<sub>2</sub>"
+					s = s + "<span>2</span>"
 				}
 				if (n == 4) {
-					s = s + "<sub>2</sub>'"
+					s = s + "<span>2</span>'"
 				}
 				if (n == 5) {
-					s = s + "<sub>2</sub>2"
+					s = s + "<span>2</span>2"
 				}
 				if (n == 6) {
-					s = s + "<sub>3</sub>"
+					s = s + "<span>3</span>"
 				}
 				if (n == 7) {
-					s = s + "<sub>3</sub>'"
+					s = s + "<span>3</span>'"
 				}
 				if (n == 8) {
-					s = s + "<sub>3</sub>2"
+					s = s + "<span>3</span>2"
 				}
 				if (n == 9) {
-					s = s + "<sub>4</sub>"
+					s = s + "<span>4</span>"
 				}
 				if (n == 10) {
-					s = s + "<sub>4</sub>'"
+					s = s + "<span>4</span>'"
 				}
 				if (n == 11) {
-					s = s + "<sub>4</sub>2"
+					s = s + "<span>4</span>2"
 				}
 				if (n == 12) {
-					s = s + "<sub>5</sub>"
+					s = s + "<span>5</span>"
 				}
 				if (n == 13) {
-					s = s + "<sub>5</sub>'"
+					s = s + "<span>5</span>'"
 				}
 				if (n == 14) {
-					s = s + "<sub>5</sub>2"
+					s = s + "<span>5</span>2"
 				}
 				doszuksegesrotations(s, ctype + 1);
 				s = s + " ";

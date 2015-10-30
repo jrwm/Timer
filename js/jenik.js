@@ -266,7 +266,7 @@ function makeScramble(input)
 {
 
 	input = input.trim()
-	input = input.replace(/\//g,'');
+	//input = input.replace(/\//g,'');
 	console.log(input)
 
 	var options = input.split(" ")

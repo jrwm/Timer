@@ -5002,7 +5002,7 @@ function randomslice() {
 		}
 		if (sqtryslice() == 1 && n == 0) {
 			t = 1;
-			return r + "," + s + " / "
+			return r + "," + s + " "
 		} else {
 			for (i = 1; i < 26; i++) {
 				sq[i] = e[i]

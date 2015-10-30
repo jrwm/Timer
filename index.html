@@ -121,14 +121,11 @@
 	<script language="javascript" type="text/javascript" src="js/algo.js"></script>
 	<script>
 
-		makeItHappen(2)
-
-
 		function makeItHappen(type) {
 			ctype = type
 			initvariables()
-			doScramble()
-			makeScramble(aktalgoritm)
+			var result = doScramble()
+			scrambleToHtml(result)
 		}
 
 		function reinit()
@@ -203,9 +200,7 @@
 			makeItHappen(11)
 		})
 
-
-
-
+		$(".sidebar .cubes .cube-01").trigger("click")
 	</script>
 </body>
 </html>

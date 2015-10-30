@@ -1424,8 +1424,8 @@ function doszuksegesrotations(e, t) {
 	}
 }
 
-function doScramble() {
-	//dropdownclose();
+function doScramble()
+{
 	var e = 0;
 	var t = 1;
 	var n = 1;
@@ -2990,6 +2990,7 @@ function doScramble() {
 		}
 	}
 	aktalgoritm = o;
+	return aktalgoritm // je to globalni, ale hodi se mi to vratit
 }
 
 function bor() {
@@ -3393,10 +3394,6 @@ function slicef(e, t) {
 	}
 }
 
-function ruv(e) {
-	return "fld" + a[e]
-}
-
 function skewbf() {
 	for (i = 1; i < 31; i++) {
 		s[i] = skb[i]
@@ -3450,12 +3447,6 @@ function skewbfdi() {
 	skb[27] = s[26];
 	skb[29] = s[30];
 	skb[30] = s[27]
-}
-
-function skewbfd() {
-	skewbfdi();
-	skewbfdi();
-	skewbfdi()
 }
 
 function skewbr() {
@@ -4177,12 +4168,9 @@ var lly = new Array;
 var fly = new Array;
 var rly = new Array;
 var bly = new Array;
-var aktscramble = "xpe";
 var aktalgoritm = "scramble";
 var dly = new Array;
 var ctype = 1;
-var ctypedrop = 0;
-var cscram = 1;
 var cleng = 30;
 var csep = 0;
 var corient = 0;

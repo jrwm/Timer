@@ -140,7 +140,6 @@ function fJSStop() {
 function fJSObnovit() {
 	makeItHappen(ctype)
 	JSStatus = 0
-	makeScramble(aktalgoritm)
 	reset()
 	JSObnovit.hide()
 	JSStart.show()
@@ -202,7 +201,6 @@ function fPSStop() {
 function fPSObnovit() {
 	makeItHappen(ctype)
 	PSStatus = 0
-	makeScramble(aktalgoritm)
 	reset()
 	PSResults = []
 	PSObnovit.hide()
@@ -216,7 +214,6 @@ function fPSObnovit() {
 function fPSDalsi() {
 	makeItHappen(ctype)
 	PSStatus = 3
-	makeScramble(aktalgoritm)
 	reset()
 	PSDalsi.hide()
 	PSStart.show()
@@ -264,7 +261,7 @@ PSDalsi.click(fPSDalsi)
 // SCRAMLE
 ////////////////////////
 
-function makeScramble(input)
+function scrambleToHtml(input)
 {
 
 	input = input.trim()

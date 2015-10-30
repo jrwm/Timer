@@ -138,7 +138,7 @@ function fJSStop() {
 }
 
 function fJSObnovit() {
-	makeItHappen(ctype)
+	generateScrambleAndApplyToHtml(ctype)
 	JSStatus = 0
 	reset()
 	JSObnovit.hide()
@@ -199,7 +199,7 @@ function fPSStop() {
 }
 
 function fPSObnovit() {
-	makeItHappen(ctype)
+	generateScrambleAndApplyToHtml(ctype)
 	PSStatus = 0
 	reset()
 	PSResults = []
@@ -212,7 +212,7 @@ function fPSObnovit() {
 }
 
 function fPSDalsi() {
-	makeItHappen(ctype)
+	generateScrambleAndApplyToHtml(ctype)
 	PSStatus = 3
 	reset()
 	PSDalsi.hide()
@@ -263,13 +263,8 @@ PSDalsi.click(fPSDalsi)
 
 function scrambleToHtml(input)
 {
-
 	input = input.trim()
-	//input = input.replace(/\//g,'');
-	console.log(input)
-
 	var options = input.split(" ")
-	console.log(options)
 	$(".scramble li[class!='refresh']").remove()
 	for (var i = 0; i < options.length; i++) {
 		var item = options[i];
@@ -315,3 +310,73 @@ window.onkeydown = function(e) {
 		}
 	}
 };
+
+////////////////////////
+//
+////////////////////////
+
+
+function generateScrambleAndApplyToHtml(type) {
+	ctype = type
+	initvariables()
+	var result = doScramble()
+	scrambleToHtml(result)
+}
+
+function reinit()
+{
+	if (mode == "JS") {
+		initJednoSlozeni()
+	} else if (mode == "PS") {
+		initPetSlozeni()
+	}
+}
+
+function removeActiveInMenu()
+{
+	$(".sidebar .cubes li").each(function(){
+		$(this).removeClass("active")
+	})
+}
+
+function handleMenuLink(cubeType, element)
+{
+	removeActiveInMenu()
+	element.addClass("active")
+	reinit()
+	generateScrambleAndApplyToHtml(cubeType)
+}
+
+$(".sidebar .cubes .cube-01").click(function() {
+	handleMenuLink(1, $(this))
+})
+
+$(".sidebar .cubes .cube-02").click(function() {
+	handleMenuLink(2, $(this))
+})
+
+$(".sidebar .cubes .cube-03").click(function() {
+	handleMenuLink(3, $(this))
+})
+
+$(".sidebar .cubes .cube-04").click(function() {
+	handleMenuLink(4, $(this))
+})
+
+$(".sidebar .cubes .cube-05").click(function() {
+	handleMenuLink(5, $(this))
+})
+
+$(".sidebar .cubes .cube-06").click(function() {
+	handleMenuLink(16, $(this))
+})
+
+$(".sidebar .cubes .cube-07").click(function() {
+	handleMenuLink(15, $(this))
+})
+
+$(".sidebar .cubes .cube-08").click(function() {
+	handleMenuLink(11, $(this))
+})
+
+$(".sidebar .cubes .cube-01").trigger("click")

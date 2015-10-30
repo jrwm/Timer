@@ -129,9 +129,12 @@
 			initvariables()
 			thinkandscramble()
 			makeScramble(aktalgoritm)
+		}
+
+		function reinit()
+		{
 			if (mode == "JS") {
 				initJednoSlozeni()
-
 			} else if (mode == "PS") {
 				initPetSlozeni()
 			}
@@ -147,48 +150,56 @@
 		$(".sidebar .cubes .cube-01").click(function() {
 			removeActiveInMenu()
 			$(this).addClass("active")
+			reinit()
 			makeItHappen(1)
 		})
 
 		$(".sidebar .cubes .cube-02").click(function() {
 			removeActiveInMenu()
 			$(this).addClass("active")
+			reinit()
 			makeItHappen(2)
 		})
 
 		$(".sidebar .cubes .cube-03").click(function() {
 			removeActiveInMenu()
 			$(this).addClass("active")
+			reinit()
 			makeItHappen(3)
 		})
 
 		$(".sidebar .cubes .cube-04").click(function() {
 			removeActiveInMenu()
 			$(this).addClass("active")
+			reinit()
 			makeItHappen(4)
 		})
 
 		$(".sidebar .cubes .cube-05").click(function() {
 			removeActiveInMenu()
 			$(this).addClass("active")
+			reinit()
 			makeItHappen(5)
 		})
 
 		$(".sidebar .cubes .cube-06").click(function() {
 			removeActiveInMenu()
 			$(this).addClass("active")
+			reinit()
 			makeItHappen(14)
 		})
 
 		$(".sidebar .cubes .cube-07").click(function() {
 			removeActiveInMenu()
 			$(this).addClass("active")
+			reinit()
 			makeItHappen(15)
 		})
 
 		$(".sidebar .cubes .cube-08").click(function() {
 			removeActiveInMenu()
 			$(this).addClass("active")
+			reinit()
 			makeItHappen(11)
 		})
 

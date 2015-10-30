@@ -89,12 +89,14 @@ $(".tabs .jedno-slozeni a").click(function() {
 	mode = "JS"
 	scrambleButton.unbind()
 	scrambleButton.click(fJSObnovit)
+	fJSObnovit()
 })
 
 $(".tabs .prumer-z-peti-slozeni a").click(function() {
 	mode = "PS"
 	scrambleButton.unbind()
 	scrambleButton.click(fPSObnovit)
+	fPSObnovit()
 })
 
 

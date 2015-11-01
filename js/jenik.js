@@ -138,7 +138,7 @@ var JSStatus = 0
 function initJednoSlozeni() {
 	JSStatus = 0
 	JSTimer.html("00:00:000")
-	JSObnovit.hide()
+	JSObnovit.show()
 	JSStop.hide()
 	scrambleButton.click(fJSObnovit)
 }
@@ -166,8 +166,9 @@ function fJSObnovit() {
 	generateScrambleAndApplyToHtml(ctype)
 	JSStatus = 0
 	reset()
-	JSObnovit.hide()
+	JSObnovit.show()
 	JSStart.show()
+	JSStop.hide()
 }
 
 JSStart.click(fJSStart)

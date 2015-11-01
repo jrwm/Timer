@@ -99,6 +99,23 @@ $(".tabs .prumer-z-peti-slozeni a").click(function() {
 	fPSObnovit()
 })
 
+function prependFullScreenButton()
+{
+	$(".main").prepend('<a href="#" class="button-screen"></a>')
+	$(".button-screen").click(function(){
+		if (mode == "JS") {
+			fJSStop()
+		} else if (mode == "PS") {
+			fPSStop()
+		}
+	})
+}
+
+function removeFullScreenButton()
+{
+	$(".button-screen").remove()
+}
+
 
 
 
@@ -128,6 +145,7 @@ function fJSStart() {
 	start()
 	JSStart.hide()
 	JSStop.show()
+	prependFullScreenButton()
 }
 
 function fJSStop() {
@@ -135,6 +153,7 @@ function fJSStop() {
 	stop()
 	JSStop.hide()
 	JSObnovit.show()
+	removeFullScreenButton()
 }
 
 function fJSObnovit() {
@@ -183,6 +202,7 @@ function fPSStart() {
 	PSStart.hide()
 	PSObnovit.show()
 	PSStop.show()
+	prependFullScreenButton()
 }
 
 function fPSStop() {
@@ -192,6 +212,7 @@ function fPSStop() {
 	PSStop.hide()
 	PSResults.push(x.time())
 	PSShowResults()
+	removeFullScreenButton()
 
 	if (PSResults.length < 5) {
 		PSDalsi.show()

@@ -19,19 +19,15 @@ function initvariables() {
 	}
 	if (ctype == 2) {
 		cleng = 25;
-		cfru = 1
 	}
 	if (ctype == 3) {
 		cleng = 40;
-		cfru = 1
 	}
 	if (ctype == 4) {
 		cleng = 60;
-		cfru = 1
 	}
 	if (ctype == 5) {
 		cleng = 80;
-		cfru = 1
 	}
 	if (ctype == 6) {
 		cleng = 90;

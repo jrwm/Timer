@@ -389,7 +389,7 @@ $(".sidebar .cubes .cube-05").click(function() {
 })
 
 $(".sidebar .cubes .cube-06").click(function() {
-	handleMenuLink(16, $(this))
+	handleMenuLink(14, $(this))
 })
 
 $(".sidebar .cubes .cube-07").click(function() {

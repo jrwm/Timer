@@ -138,7 +138,7 @@ var JSStatus = 0
 function initJednoSlozeni() {
 	JSStatus = 0
 	JSTimer.html("00:00:000")
-	JSObnovit.show()
+	JSObnovit.hide()
 	JSStop.hide()
 	scrambleButton.click(fJSObnovit)
 }
@@ -151,6 +151,7 @@ function fJSStart() {
 	start()
 	JSStart.hide()
 	JSStop.show()
+	JSObnovit.show()
 	prependFullScreenButton()
 }
 
@@ -166,7 +167,7 @@ function fJSObnovit() {
 	generateScrambleAndApplyToHtml(ctype)
 	JSStatus = 0
 	reset()
-	JSObnovit.show()
+	JSObnovit.hide()
 	JSStart.show()
 	JSStop.hide()
 }

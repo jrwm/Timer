@@ -101,6 +101,9 @@ $(".tabs .prumer-z-peti-slozeni a").click(function() {
 
 function prependFullScreenButton()
 {
+	if ($(window).width() > 800) {
+		return
+	}
 	$(".main").prepend('<a href="#" class="button-screen"></a>')
 	$(".button-screen").click(function(){
 		if (mode == "JS") {
@@ -113,6 +116,9 @@ function prependFullScreenButton()
 
 function removeFullScreenButton()
 {
+	if ($(window).width() > 800) {
+		return
+	}
 	$(".button-screen").remove()
 }
 
